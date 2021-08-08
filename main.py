@@ -11,6 +11,7 @@ from tool import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
+                    [InlineKeyboardButton("CONTENT ISN'T OWNED BY ME IT IS ALL FROM TORRENT", url=" "),
                     [InlineKeyboardButton("Search YTS", switch_inline_query_current_chat="!yts "),
                      InlineKeyboardButton("Go Inline", switch_inline_query="!yts ")],
                     [InlineKeyboardButton("Search ThePirateBay", switch_inline_query_current_chat="!pb "),
@@ -19,7 +20,7 @@ DEFAULT_SEARCH_MARKUP = [
                      InlineKeyboardButton("Go Inline", switch_inline_query="")],
                     [InlineKeyboardButton("Search Anime", switch_inline_query_current_chat="!a "),
                      InlineKeyboardButton("GO Inline", switch_inline_query_current_chat="!a ")],
-                    [InlineKeyboardButton("Developer: @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    [InlineKeyboardButton("Developer: @Adarshgoelo5", url="https://t.me/Adarshgoelo5")]
                 ]
 
 
@@ -29,7 +30,7 @@ async def start_handler(_, message: Message):
         await message.reply_text(
             text="Hello, I am Torrent Search Bot!\n"
                  "I can search Torrent Magnetic Links from Inline.\n\n"
-                 "Made by @AbirHasan2005",
+                 "Made by @Adarshgoelo5",
             disable_web_page_preview=True,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
@@ -150,7 +151,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Rating:** `{torrentList[i]['Rating']}`\n"
                                              f"**Duration:** `{torrentList[i]['Runtime']}`\n"
                                              f"**Released on {torrentList[i]['ReleaseDate']}**\n\n"
-                                             f"**Torrent Download Links:**\n{dl_links}\n\nPowered By @AHToolsBot",
+                                             f"**Torrent Download Links:**\n{dl_links}\n\nPowered By @Adarshgoelo5",
                                 parse_mode="Markdown",
                                 disable_web_page_preview=True
                             ),
