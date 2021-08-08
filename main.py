@@ -1,4 +1,4 @@
-# (c) @AbirHasan2005 & Jigar Varma & Hemanta Pokharel & Akib Hridoy
+# (c) @AbirHasan2005 
 
 import asyncio
 from pyrogram import Client, filters
@@ -98,7 +98,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Leechers:** `{torrentList[i]['Leechers']}`\n"
                                              f"**Uploader:** `{torrentList[i]['Uploader']}`\n"
                                              f"**Uploaded on {torrentList[i]['Date']}**\n\n"
-                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @Adarshgoelo5",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -201,7 +201,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Leechers:** `{torrentList[i]['Leecher']}`\n"
                                              f"**Size:** `{torrentList[i]['Size']}`\n"
                                              f"**Upload Date:** `{torrentList[i]['Date']}`\n\n"
-                                             f"**Magnet:** \n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                             f"**Magnet:** \n`{torrentList[i]['Magnet']}`\n\nPowered By @adarshgoelo5",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -241,7 +241,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                          f"__Uploaded by {torrentList[i]['UploadedBy']}__\n"
                                          f"__Uploaded {torrentList[i]['DateUploaded']}__\n"
                                          f"__Last Checked {torrentList[i]['LastChecked']}__\n\n"
-                                         f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                         f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @Adarshgoelo5",
                             parse_mode="Markdown"
                         ),
                         reply_markup=InlineKeyboardMarkup(
