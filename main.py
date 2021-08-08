@@ -11,7 +11,6 @@ from tool import SearchYTS, SearchAnime, Search1337x, SearchPirateBay
 
 TorrentBot = Client(session_name=Config.SESSION_NAME, api_id=Config.API_ID, api_hash=Config.API_HASH, bot_token=Config.BOT_TOKEN)
 DEFAULT_SEARCH_MARKUP = [
-                    [InlineKeyboardButton("CONTENT ISN'T OWNED BY ME IT IS ALL FROM TORRENT", url=" "),
                     [InlineKeyboardButton("Search YTS", switch_inline_query_current_chat="!yts "),
                      InlineKeyboardButton("Go Inline", switch_inline_query="!yts ")],
                     [InlineKeyboardButton("Search ThePirateBay", switch_inline_query_current_chat="!pb "),
